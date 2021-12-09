@@ -5,6 +5,7 @@ import Rugvista from './RugVista.json';
 function App() {
   const [todos, setTodos] = useState(Rugvista.items);
 
+  
   function strikethrough(id) {
     setTodos(todos.map(todo => {
       if (todo.id === id) {
